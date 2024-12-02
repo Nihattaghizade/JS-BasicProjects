@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <title>Document</title>
+  </head>
+  <body
+    class="h-screen bg-[#6DB3B7] w-screen flex justify-center items-center font-poppins box-border"
+  >
+
+    <div class="w-[400px] h-[600px]">
+      <div class="calculator-info pt-[70px] pb-[30px] px-[50px] bg-[#CEE7E4]">
+        <div class="tip-info flex">
+          <div>
+            <h3 class="text-[32px]">TIP:</h3>
+            <span class="text-[#9EADAF] font-semibold">/Person</span>
+          </div>
+          <span id="tipCost" class="text-[#4E4E4E] text-[32px] mt-3 ml-[154px]">$15</span>
+        </div>
+        <div class="total-info flex">
+          <div>
+            <h3 class="text-[32px] mt-[30px]">Total:</h3>
+            <span class="text-[#9EADAF] font-semibold">/Person</span>
+          </div>
+          <span id="totalCost" class="text-[#4E4E4E] text-[32px] mt-[42px] ml-[116px]"
+            >$315</span
+          >
+        </div>
+      </div>
+      <div class="calculator-inputs px-[30px] pt-5 pb-10 bg-[#2B3841]">
+        <div class="bill-section">
+          <span class="text-xl text-[#CEE7E4]">Bill</span>
+          <input id="billInp" type="number" value="300" class="bill-input w-[340px] bg-[#35BEB8] h-[42px] mt-[10px] text-center flex justify-center items-center text-xl font-semibold text-[#FFF]">
+        </div>
+        <div class="tip-section mt-[10px]">
+          <span class="text-xl text-[#CEE7E4]">Tip</span>
+          <div class="tip-input-section flex mt-[10px]">
+            <button id="decreaseBtnTip" class="decrease-button w-[42px] h-[42px] bg-[#7AE8D9]"><img src="./assets/icons/decrease.svg" alt="" class="ml-[9px]"></button>
+            <input id="tipInp" type="text" value="5%" class="tip-input w-[256px] h-[42px] bg-[#35BEB8] text-center flex justify-center items-center text-xl font-semibold text-[#FFF]">
+            <button id="increaseBtnTip" class="increase-button w-[42px] h-[42px] bg-[#7AE8D9]"><img src="./assets/icons/increase.svg" alt="" class="ml-[9px]"></button>
+          </div>
+        </div>
+        <div class="people-section mt-[10px]">
+          <span class="text-xl text-[#CEE7E4]">No. of People</span>
+          <div class="people-input-section flex mt-[10px]">
+            <button id="decreaseBtnPeo" class="decrease-button w-[42px] h-[42px] bg-[#7AE8D9]"><img src="./assets/icons/decrease.svg" alt="" class="ml-[9px]"></button>
+            <input id="peopleInp" type="number" value="1" min="0" class="people-input w-[256px] h-[42px] bg-[#35BEB8] flex justify-center items-center text-xl font-semibold text-[#FFF] text-center">
+            <button id="increaseBtnPeo" class="increase-button w-[42px] h-[42px] bg-[#7AE8D9]"><img src="./assets/icons/increase.svg" alt="" class="ml-[9px]"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="h-screen flex items-center justify-center bg-gray-200">
+    <div class="max-w-6xl bg-white p-16 pt-24 mx-auto rounded-md relative">
+      <!-- Buttons -->
+      <div
+        class="flex justify-center absolute left-1/2 -top-9 -translate-x-1/2 tabs-container"
+      >
+        <!-- Button - 1 -->
+        <button
+          class="flex-none transition-all duration-200 ease-linear rounded-full py-4 px-12 mr-8 text-xl font-medium hover:bg-yellow-300 bg-yellow-400 -translate-y-1/4 tab"
+          data-tab="0"
+        >
+          Art Classes
+        </button>
+        <!-- Button - 2 -->
+        <button
+          class="flex-none transition-all duration-200 ease-linear rounded-full py-4 px-12 mr-8 text-xl font-medium hover:bg-red-300 bg-red-400 tab"
+          data-tab="1"
+        >
+          Personal Training
+        </button>
+        <!-- Button - 3 -->
+        <button
+          class="flex-none transition-all duration-200 ease-linear rounded-full py-4 px-12 text-xl font-medium hover:bg-green-300 bg-green-400 tab"
+          data-tab="2"
+        >
+          Spa Treatments
+        </button>
+      </div>
+      <!-- Tab Content - 1-->
+      <div class="flex tab__content">
+        <div
+          class="w-28 h-28 flex flex-none items-center justify-center rounded-full bg-yellow-200 mr-8"
+        >
+          <img
+            src="./assets/images/palette.svg"
+            class="w-11 h-11 fill-yellow-500"
+            alt=""
+          />
+        </div>
+        <div>
+          <h1 class="text-2xl font-medium text-gray-700 mb-6 tracking-wide">
+            Unleash Your Creativity with our Inspiring Art Classes.
+          </h1>
+          <p class="text-lg text-gray-700 tracking-wide">
+            Unleash your inner artist and dive into the captivating world of art
+            with our inspiring classes. Whether you're a beginner or a seasoned
+            enthusiast, our expert instructors will guide you on an artistic
+            journey like no other. Discover various mediums, techniques, and
+            styles while nurturing your creativity. No more waiting; embrace
+            your passion for art and enroll in our classes now!
+          </p>
+        </div>
+      </div>
+      <!-- Tab Content - 2-->
+      <div class="flex hidden tab__content">
+        <div
+          class="w-28 h-28 flex flex-none items-center justify-center rounded-full bg-red-200 mr-8"
+        >
+          <img
+            src="./assets/images/gym.svg"
+            class="w-11 h-11 fill-red-500"
+            alt=""
+          />
+        </div>
+        <div>
+          <h1 class="text-2xl font-medium text-gray-700 mb-6 tracking-wide">
+            Achieve Your Fitness Goals with Personal Training
+          </h1>
+          <p class="text-lg text-gray-700 tracking-wide">
+            Take your fitness to new heights with personalized training tailored
+            to your goals. Our certified trainers are committed to helping you
+            achieve the results you desire. Whether you want to lose weight,
+            build muscle, or improve overall health, we have the expertise and
+            dedication to get you there. Say goodbye to cookie-cutter workouts;
+            experience the power of customized fitness plans.
+          </p>
+        </div>
+      </div>
+      <!-- Tab Content - 3 -->
+      <div class="flex hidden tab__content">
+        <div
+          class="w-28 h-28 flex flex-none items-center justify-center rounded-full bg-green-200 mr-8"
+        >
+          <img
+            src="./assets/images/plant.svg"
+            class="w-11 h-11 fill-green-500"
+            alt=""
+          />
+        </div>
+        <div>
+          <h1 class="text-2xl font-medium text-gray-700 mb-6 tracking-wide">
+            Relax and Rejuvenate with our Luxurious Spa Treatments.
+          </h1>
+          <p class="text-lg text-gray-700 tracking-wide">
+            Treat yourself to a world of relaxation and rejuvenation at our
+            luxurious spa. Surrender to the hands of our skilled therapists and
+            immerse yourself in a haven of tranquility. From soothing massages
+            to revitalizing facials, our spa treatments are designed to melt
+            away stress and leave you feeling refreshed. Step into a realm of
+            pampering and self-care;
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="video-container" id="videoCon">
+        <video id="musicVideo" src="./assets/video/ACosmicArtLoop.mp4"></video>
+        <div id="progress-container">
+            <div id="progress-fill"></div>
+        </div>
+        <div class="icons-bar" id="iconsBar">
+            <div class="video-play-sound">
+                <button id="playAndPause">
+                    <img  src="./assets/icons/play.svg" alt="">
+                </button>
+                <button id="sound">
+                    <img src="./assets/icons/full-sound.svg" alt="" style="margin-left: 25px;">
+                </button>
+                <div id="sound-bar">
+                    <div id="sound-fill"></div>
+                </div>
+                <div class="video-info" style="margin-left: 30px;">
+                    <span id="currentTime">00:00</span>/<span id="duration">01:23:56</span>
+                </div>
+            </div>
+            <div class="video-seconds-screen">
+                <img id="before" src="./assets/icons/before10seconds.svg" alt="" style="margin-right: 10px; cursor: pointer;">
+                <img id="after" src="./assets/icons/after10seconds.svg" alt="" style="margin-right: 20px; cursor: pointer;">
+                <button id="screen">
+                    <img src="./assets/icons/full-screen.svg" alt=""> 
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
